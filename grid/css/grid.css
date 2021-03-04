@@ -5,14 +5,25 @@
 
 /* ==== GRID SYSTEM ==== */
 
-.borderbox {
+.borderbox{
 	box-sizing: border-box;
-	max-width:1200px;
-	height:100%;
-	padding:10px;
-	border:0px;
+    max-width: 1200px;
+    height: auto;
+    padding: 30px;
+    border: 10px white;
 	text-align: center;
+	margin: auto;
 }
+.contentbox {
+	box-sizing: content-box;
+   	max-width: 100%;
+    height: auto;
+	padding: 30px;
+    border: 10px white;
+	
+}
+
+
 
 
 .container {
