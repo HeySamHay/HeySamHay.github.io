@@ -1,0 +1,218 @@
+
+body{
+  margin:0;  
+  padding:0;
+	max-width: 1800px;
+	height: 99vh;
+	background-color: black;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size: 12px;
+
+}
+.outer{
+   text-align: center;
+   padding:0px;
+}
+.page{
+	position:relative;
+   max-width:1200px;
+	width: 100%;
+   height:100%;
+   display: inline-block;
+   text-align:center;
+   padding:20px;
+   background-color: black;
+}
+.topofpage { 
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: bottom;
+}
+	
+.container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: flex-start;
+	flex-grow: 1;
+	background-color:black;
+	text-align: center;
+  	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+}
+
+
+	
+#menu {
+	display:none;
+	background-color: none;
+	
+}
+
+#menuoverlay {
+	display: none;
+	
+}
+
+
+
+	
+.logo { 
+	max-width: 80px;
+	text-align: left;
+	
+}
+.logo_img { 
+	margin-top: 0px;
+	max-width: 100%;
+
+}
+
+.logo:hover{
+	animation-fill-mode: forwards;
+	animation-name: changelogo;
+	animation-duration: .5s;
+	animation-timing-function: ease-in;
+	
+}
+
+@keyframes changelogo{
+	from {transform: scale(1,1)}
+	to {transform: scale(1.15,1.15)}
+}
+
+
+.navright{
+	text-align: center;
+} 
+
+
+.placeholder_img {
+	max-width: 800px;
+	margin-top: 25px;
+	text-align: center;
+}
+
+
+a {
+  color:white;
+  font-size:20px;
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: #A0114A ;  
+ }
+  a:active {
+  color: grey;
+}
+
+
+.content{
+
+	background-color: aqua;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: black;
+	text-align: center;
+	margin-top:0px;
+
+}
+
+@media screen and (max-width: 850px){
+	
+	body {
+		background-color: aqua;
+	}
+
+	
+	.page{
+		max-width: 480px;
+		
+	}
+	
+	.placeholder_img{
+		max-width: 400px;
+	}
+	#menu {
+		display: inline-block;
+		
+	}
+	
+	#menu img {
+		width:50px;
+		cursor: pointer;	
+	}
+	
+	#menuoverlay {
+		position: absolute;
+		top:0px;
+		background-color:#A0114A;
+		width: 89%;
+		height: 100vh;
+		display: none;
+		text-align:left;
+		padding-left: 20px;
+		
+		
+		
+	}
+	
+	.menuitems{
+		font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+		font-size: 30px;
+		color: white;	
+	}
+	
+	.innermenu {
+		padding-top:20px;
+		
+	}
+	
+	.innermenu div{
+		padding-bottom:20px;
+		
+	}
+	
+	
+	#close {
+		postion: absolute;
+		text-align: right;
+		top: 10px;
+		padding-right: 20px;
+		font-size: 60px;
+		cursor: pointer;
+		color: white;
+		
+		}
+	
+	.navbar {
+		display: none;
+	
+	}
+	.logo {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 850px) and (max-width: 1200px){
+	body {
+		background-color: black;
+	}
+	
+	.page{
+		max-width: 800px;
+	}
+}
+
+@media screen and (min-width: 1450px) {
+	.body {
+		background-color: yellow;
+	}
+	
+	.page{
+		max-width: 1400px;
+	}
+}
