@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transitions</title>
+
+   
+
+   <style>
+
+
+   	body{
+   		font-family: sans-serif;
+   		font-size:60px;
+   		color:darkturquoise;
+		background-color: black;
+		font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+   	}
+
+   	.cardholder{
+        text-align: center;
+
+   	}
+      
+    .card{
+    	position: relative;
+       background-color:black;
+       display: inline-block;
+    }
+
+    .card img{
+      width:100%;
+      height:auto;
+    }
+
+
+    .center {
+
+     padding: 60% 0;
+     text-align: center;
+    }
+
+
+    .card_overlay{
+    	position:absolute;
+    	background-color: black;
+		border: solid 1px;
+    	width:100%;
+    	height:100%;
+    	transition: .5s ease;
+    	
+
+    }
+
+
+    .card:hover .card_overlay{
+
+    	opacity: .0;
+    }
+	   
+	    .card:hover img{
+			transition: 3s ease;
+		filter:hue-rotate(300deg) brightness(2);
+		transform: rotate(15deg);
+    }
+	
+    
+
+    .card_text{
+    	margin:0;
+    }
+
+
+
+   </style>
+
+</head>
+<body>
+
+
+
+
+	<div class="cardholder">
+       <div class="card">
+       	  <div class="card_overlay"><p class="center">KING OF THE MONSTERS</p></div>
+       	  <img src="img/godzilla.jpg" alt="godzilla">
+       </div>
+	</div>
+
+</body>
+</html>
