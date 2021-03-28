@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filters</title>
+
+	<style>
+		
+     .my_filter{
+
+		-webkit- filter: opacity(.3) hue-rotate(130deg); 
+      filter: opacity(.3) hue-rotate(130deg);
+
+     }
+
+
+
+
+
+    .my_filter:hover{
+
+      animation: 3s myfilteranimation forwards;
+
+    }
+		
+
+
+
+
+     @keyframes myfilteranimation{
+      
+	      100%{
+	       -webkit-filter: opacity:(1); 
+	        filter: opacity(1);
+			  
+			  	-webkit- filter: opacity(1) hue-rotate(300deg); 
+      filter: opacity(1) hue-rotate(300deg);
+	       }
+
+     }
+
+
+
+
+	</style>
+</head>
+<body>
+
+<img class="my_filter" src="img/monty.JPG" alt="monty">
+
+</body>
+</html>
